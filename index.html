@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>MyTunes</title>
+  <style>
+    a:hover {
+      background-color: gray;
+    }
+    #tune {
+      background-image: url(https://static.vecteezy.com/system/resources/thumbnails/010/281/583/small_2x/classical-guitar-close-up-dramatically-lit-on-a-black-background-with-copy-space-photo.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+    }
+    #new {
+      background-image: url(https://c4.wallpaperflare.com/wallpaper/99/300/952/beautiful-midnight-dark-night-oceanscape-abstract-photography-hd-art-wallpaper-preview.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    img:hover{
+      transition: 5s;
+      transform:scaleY();
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Navbar -->
+  <header class="bg-black px-6 py-3">
+    <nav class="flex flex-wrap gap-6 text-white justify-center md:justify-start">
+      <a href="">MyTunes</a>
+      <a href="">Overview</a>
+      <a href="">Music</a>
+      <a href="">Video</a>
+      <a href="">Gift Cards</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="tune" class="text-center py-20 px-4 md:px-40 text-white">
+    <h1 class="text-4xl md:text-6xl font-bold">MyTunes</h1>
+    <h2 class="text-xl md:text-3xl font-bold mt-4">Your music, movies, and TV shows take center stage.</h2>
+    <p class="mt-6 text-sm md:text-base">
+      myTunes is the best way to organize and enjoy the music, movies, and TV shows you already have — 
+      and shop for the ones you want. Enjoy all the entertainment myTunes has to offer on your Mac and PC.
+    </p>
+  </section>
+
+  <!-- Music Section -->
+  <section class="text-center py-12 px-4 md:px-40 text-white bg-gray-800">
+    <h1 class="text-3xl md:text-4xl font-bold">🎵 Music</h1>
+    <h2 class="text-lg md:text-2xl font-bold mt-4">45 million songs. Zero ads.</h2>
+    <p class="mt-6 text-sm md:text-base font-semibold">
+      Stream over 45 million songs, ad-free. Or download albums and tracks to listen offline. 
+      All the music in your personal myTunes library lives alongside the Orange Music catalog. 
+      Start your free trial today.
+    </p>
+    <button class="bg-red-600 mt-6 py-2 px-6 rounded-md hover:bg-red-700" id="B1" onclick="button1()">Start Your Trial Now</button>
+    <p class="mt-4 text-sm">Available on iOS and Android devices.</p>
+    <img src="https://jolly-kalam-23776e.netlify.app/mytunes/img/mockup1.png" 
+         alt="Music Mockup" class="mt-8 w-full max-w-3xl mx-auto h-auto">
+  </section>
+
+  <!-- Movies Section -->
+  <section class="text-center py-12 px-4 md:px-40">
+    <h1 class="text-xl md:text-2xl font-bold">The movie and TV collection you always wished for.</h1>
+    <p class="mt-6 text-sm md:text-base">
+      With over 100,000 movies and TV shows to choose from, there’s always something to watch on myTunes. 
+      On Orange TV 4K, enjoy a tremendous selection in 4K HDR. Tap to play, or download if you’re offline.
+    </p>
+    <button class="bg-blue-800 mt-6 py-2 px-6 rounded-md hover:bg-blue-900" id="B2" onclick="button2()">Read More</button>
+    <img src="https://jolly-kalam-23776e.netlify.app/mytunes/img/mockup2.png" 
+         alt="Movie Mockup" class="mt-8 w-full max-w-4xl mx-auto h-auto">
+  </section>
+
+  <!-- Entertainment Section -->
+  <section id="new" class="text-center py-16 px-4 md:px-40 text-white">
+    <h2 class="text-xl md:text-2xl font-bold">A world of entertainment. Anywhere you are.</h2>
+    <p class="mt-6 text-sm md:text-base">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic consectetur quisquam eius blanditiis perspiciatis, 
+      ullam iusto dolore fuga? Earum tempore quod tenetur harum officiis porro. 
+    </p>
+  </section>
+
+  <!-- Gift Cards Section -->
+  <section class="flex flex-col md:flex-row gap-8 py-12 px-4 md:px-20 items-center">
+    <div class="w-full md:w-1/2">
+      <img src="https://jolly-kalam-23776e.netlify.app/mytunes/img/cards.png" alt="Gift Cards" class="w-full h-auto">
+    </div>
+    <div class="w-full md:w-1/2">
+      <h1 class="text-2xl font-bold">Gift Cards</h1>
+      <p class="mt-4 text-sm md:text-base">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus itaque, fuga commodi veniam quasi officiis. 
+        Consequuntur consectetur at, maxime, sequi quo, ipsum cupiditate aut vero itaque officiis mollitia!
+      </p>
+      <p class="mt-6">Already have an Orange MyTunes Music Gift Card?</p>
+      <hr class="my-4">
+      <a href="" class="font-bold text-blue-600 hover:underline">Redeem</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 px-4 md:px-40 bg-black text-white grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">
+    <div>
+      <h1 class="underline mb-4">Shop & Learn</h1>
+      <ul class="space-y-2">
+        <li><a href="">Music</a></li>
+        <li><a href="">Movies</a></li>
+        <li><a href="">Shows</a></li>
+        <li><a href="">Apps</a></li>
+        <li><a href="">Gift Cards</a></li>
+      </ul>
+    </div>
+    <div>
+      <h1 class="underline mb-4">Orange Store</h1>
+      <ul class="space-y-2">
+        <li><a href="">Find a Store</a></li>
+        <li><a href="">Today at Orange</a></li>
+        <li><a href="">Orange Camp</a></li>
+        <li><a href="">Financing</a></li>
+        <li><a href="">Order Status</a></li>
+      </ul>
+    </div>
+    <div>
+      <h1 class="underline mb-4">Education & Business</h1>
+      <ul class="space-y-2">
+        <li><a href="">Orange & Education</a></li>
+        <li><a href="">Shop For College</a></li>
+        <li><a href="">Orange & Business</a></li>
+        <li><a href="">Shop For Business</a></li>
+        <li><a href="">Jobs</a></li>
+      </ul>
+    </div>
+    <div>
+      <h1 class="underline mb-4">About Orange</h1>
+      <ul class="space-y-2">
+        <li><a href="">Newsroom</a></li>
+        <li><a href="">Leadership</a></li>
+        <li><a href="">Investors</a></li>
+        <li><a href="">Events</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h1 class="underline mb-4">More</h1>
+      <ul class="space-y-2">
+        <li>Music</li>
+        <li>Movies</li>
+        <li>Shows</li>
+        <li>Apps</li>
+        <li>Gift Cards</li>
+      </ul>
+    </div>
+  </footer>
+  <section>
+    <p class="bg-gray-600 py-6 text-center">Copyright © 2019 Orange myTunes</p>
+
+  </section>
+
+
+  <script>
+    let b1 = document.getElementById("B1")
+    let b2 = document.getElementById("B2")
+
+
+    function button1(){
+      alert("Get Free Trial");
+    }
+
+    function button2(){
+      alert("Read More Information ");
+    }
+
+
+  </script>
+
+</body>
+</html>
